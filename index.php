@@ -1,9 +1,11 @@
 <!DOCTYPE html><html>
 	<head>
 		<title></title>
+		<link href="https://fonts.googleapis.com/css?family=Lobster|Pattaya&amp;subset=cyrillic,latin-ext" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css?ver=<?=rand(763324,7879872987)?>">
+
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<div>
@@ -30,8 +32,9 @@
 					($element.hasClass($effect)==false)) {
 			
 			setTimeout(function() {
-						$element.addClass($effect);
-								}, $timeout);
+						$element.addClass($effect).css('opacity',1);
+						console.log($element.prop('nodeName'));
+						}, $timeout);
 					
 					
 					} else {
@@ -53,28 +56,35 @@
 				</div>
 			</div>
 		</div>
+
 		
 		<div>
 			<div class="container">
+                
+                <h3 class=" text-center"><span>Пружинный блок Bonell</span></h3>
+
 				<div class="row">
 					<div class="col-sm-4">
-						<div class="an" data-time='300' data-effect='fadeInLeft animated'>test sampl 1
-                            <div class="an" data-time='1500' data-effect='fadeInRight animated'> 
-                            i fade in form the right
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas culpa quibusdam id consequatur non maxime tempora? Quos, adipisci doloremque atque non earum fuga, vero nemo cupiditate corrupti ut ea labore.</p>
-
+						<div class="product-section">
+							<h4 class="an" data-time='10' data-effect='fadeInLeft animated'>Simplex</h4>
+							<img src="http://sam-son.kz/images/15" class="img-responsive center-block an" data-time='500' data-effect='flipInX animated'>
 						</div>
 					</div>
+					
 					<div class="col-sm-4">
-						<div class="an" data-time='300' data-effect='fadeInLeft animated'>test sampl 1</div>
+						<div class="product-section">
+							<h4 class="an" data-time='10' data-effect='fadeInUp animated'>Simplex</h4>
+							<img src="http://sam-son.kz/images/15" class="img-responsive center-block an" data-time='500' data-effect='flipInX animated'>
+						</div>
 					</div>
+
 					<div class="col-sm-4">
-						<div class="an" data-time='300' data-effect='fadeInLeft animated'>test sampl 1</div>
+						<div class="product-section">
+							<h4 class="an" data-time='10' data-effect='fadeInRight animated'>Simplex</h4>
+							<img src="http://sam-son.kz/images/15" class="img-responsive center-block an" data-time='500' data-effect='flipInX animated'>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		
-	</body>
-</html>
+		</body>
+	</html>
