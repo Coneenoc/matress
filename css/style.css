@@ -1,28 +1,52 @@
 /*
 font-family: 'Lobster', cursive;
 font-family: 'Pattaya', sans-serif;
+font-family: 'El Messiri', sans-serif;
 */
 
 
 
 body {
-	font-size:12px;
+	font-size:13px;
 	color:#333;
 	overflow-x:hidden; 
+	font-family: Tahoma,'El Messiri', sans-serif;
 }
 
 
 .top-div {
 	background:url('../img/bg_new.jpg') center center no-repeat rgba(0, 0, 0, 0.5) fixed;
-	padding: 100px 0;
+	padding: 150px 0;
 	color:#fff;
+
 }
 
 .top-div .attracter {
 	text-align: center;
+	margin-bottom: 40px;
 	font-family: 'Lobster', cursive;
 	color:#fff;
 	text-shadow: 1px 1px 1px #333;
+}
+
+.top-div .attracter-add {
+	font-family: 'El Messiri', sans-serif;
+}
+
+
+.advantages {
+	text-align: center;
+	padding: 25px 0;
+}
+
+.advantages i {
+	font-size: 38px;
+	text-shadow: 1px 1px 1px #333;
+	padding-bottom: : 15px;
+}
+
+.advantages div.description {
+	padding: 0 15px;
 }
 
 
@@ -32,7 +56,7 @@ body {
 
 .product-section {
   padding-bottom: 25px;
-  margin-bottom: 25px;
+  margin: 25px 0;
   border-bottom: 1px dashed #eee;
 }
 
@@ -46,8 +70,6 @@ body {
     font-family: 'Lobster', cursive;
     text-shadow: 1px 1px 1px #999;
 }
-
-
 
 .prices * {
 	font-family: 'Pattaya', sans-serif;
@@ -65,9 +87,13 @@ body {
 
 .product-section h4 {
 	font-family: 'Pattaya', sans-serif;
-	color:#666;
+	color:#489FDF;
 	text-align: center;
 	font-size:25px;
+}
+
+.product-section h5 {
+	font-weight: bold;
 }
 
 
@@ -80,8 +106,8 @@ body {
 }
 
 
-.container>h3 {
-	margin: 45px 0;
+.container>h3.head {
+	margin: 45px 0 15px 0;
 	font-family:'Lobster', cursive, Arial;
 }
 
@@ -91,7 +117,11 @@ span.highlight {
 
 .container>h3 span {
 	border-bottom: 1px solid #ccc;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
+}
+
+.container>h3+h5 {
+	text-align: center;
 }
 
 
@@ -106,8 +136,6 @@ span.highlight {
 
 #custom-bootstrap-menu {
 
-font-family: 'Pattaya', sans-serif;
-font-weight: lighter;
 	/*
 font-family: "Arial Narrow";
 */
@@ -116,11 +144,14 @@ font-family: "Arial Narrow";
 
 #custom-bootstrap-menu.navbar-default .navbar-brand {
     color: #fff;
+    font-family: 'Lobster', cursive;
 }
 #custom-bootstrap-menu.navbar-default {
-    font-size: 18px;
-    background-color: rgba(248, 248, 248, 0);
+    font-size: 14px;
+    background-color: #489FDF;
     border-bottom-width: 0px;
+    box-shadow: 0 1px 2px #666;
+    border-bottom: 2px solid #f4f4f4;
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
     color: rgba(255, 255, 255, 1);
@@ -142,17 +173,15 @@ font-family: "Arial Narrow";
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-    background-color: #ddd;
+    background-color: #fff;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
 }
 #custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #888;
+    background-color: #489FDF;
 }
-
-
 
 
 
@@ -203,9 +232,6 @@ font-family: "Arial Narrow";
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
 
-    	 #custom-bootstrap-menu.navbar-default {
-    	 	background: #666;
-    	 }
 
     }
 
