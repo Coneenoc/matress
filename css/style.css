@@ -56,10 +56,9 @@ body {
 
 .product-section {
   display: table;
-<<<<<<< HEAD
+  position: relative;
+  overflow: hidden;
   background: #fff;
-=======
->>>>>>> b47c5f7e9665fd360ce619c9c91b58c71c12355d
   padding: 15px;
   margin: 25px 0;
   border: 1px solid #eee;
@@ -76,7 +75,7 @@ body {
 }
 
 .product-section img {
-    padding: 0 25px;
+
 }
 
 .product-section .discount {
@@ -184,6 +183,28 @@ border-radius: 30px;
 }
 
 
+.discount-holder-corner {
+   -moz-transform: rotate(-45deg); /* Для Firefox */
+    -ms-transform: rotate(-45deg); /* Для IE */
+    -webkit-transform: rotate(-45deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(-45deg); /* Для Opera */
+    transform: rotate(-45deg);
+    position: absolute;
+    background: #ff6e6e; 
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Lobster', cursive;
+    z-index: 1;
+    left:-95px;
+    top:-2px;
+}
+
+.discount-holder-corner div {
+  border:1px dotted #fff;
+  margin:3px;
+  padding: 10px  100px;
+}
+
 
 .sizes td {
     font-weight: bold;
@@ -192,6 +213,16 @@ border-radius: 30px;
 .prices-for-sizes td {
     font-size: 120%;
 }
+
+
+
+/* customize iziModal */
+
+.iziModal {
+
+}
+
+
 
 
 /* menu  custom style */
@@ -212,6 +243,7 @@ font-family: "Arial Narrow";
 }
 #custom-bootstrap-menu.navbar-default {
     font-size: 14px;
+    z-index:2;
     background-color: #489FDF;
     border-bottom-width: 0px;
     box-shadow: 0 1px 2px #666;

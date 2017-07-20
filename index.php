@@ -8,12 +8,13 @@
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="iziModal/css/iziModal.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css?ver=<?=rand(763324,7879872987)?>">
 
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-
+		<script type="text/javascript" src="iziModal/js/iziModal.js"></script>
 
 		<script type="text/javascript">
 			$('documnet').ready(function() {
@@ -39,22 +40,20 @@
 		
 		setTimeout(function() {
 					$element.addClass($effect).css('opacity',1);
-					console.log($element.prop('nodeName'));
+					//console.log($element.prop('nodeName'));
 					}, $timeout);
 				
 				} else {
+
 				//$element.removeClass($effect);
+
 				}
+
+
 				});
 			}
 			$window.on('scroll resize', check_if_in_view);
 		$window.trigger('scroll');
-
-		$("#demo01").animatedModal();
-
-
-           $("#demo01").animatedModal();
-
 			});
 		</script>
 	</head>
@@ -79,43 +78,40 @@
 					</div>
 				</div>
 			</div>
-			<h1 class="attracter ">Лучшие Мтрасы для Сладких Снов</h1>
-			<h4 class="attracter-add text-center">
-			У нас вы можете преобрести отличную продкуцию на 30% ниже рыночной стоимости.
-			Мы работаем на прямую спроизводителем матрасов.
-			</h4>
 			<div class="row">
-				<div class="col-sm-3 col-xs-6">
+
+				<div class="col-sm-6 col-sm-push-3">
+					
+					<h1 class="attracter ">Лучшие Мтрасы для Сладких Снов</h1>
+					<h4 class="attracter-add text-center">
+					У нас вы можете преобрести отличную продкуцию на 30% ниже рыночной стоимости.
+					Мы работаем на прямую спроизводителем матрасов.
+					</h4>
+				</div>
+			</div>	
+            <div class="row">
+				<div class="col-sm-4 col-xs-6">
+					<div class="advantages">
+						<i class="fa fa-cloud-upload"></i>
+						<div class="description">
+							<h5>Отличные цены</h5>
+							 Цены всегда актульны и ниже рыночных 70%
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-6">
 					<div class="advantages">
 						<i class="fa fa-bug"></i>
 						<div class="description">
-							Антибактерилаьное покрытие
+							Антибактерилаьная обработка
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-3 col-xs-6">
+				<div class="col-sm-4 col-xs-6">
 					<div class="advantages">
 						<i class="fa fa-leaf"></i>
 						<div class="description">
-							Антибактерилаьное покрытие
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3 col-xs-6">
-					<div class="advantages">
-						<i class="fa fa-cloud-upload"></i>
-						<div class="description">
-							<h5>Дашащие материалы</h5>
-							Чехлы на матрсы производятся из матрилаов пропускающих воздух на 70%
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3 col-xs-6">
-					<div class="advantages">
-						<i class="fa fa-cloud-upload"></i>
-						<div class="description">
-							<h5>Дашащие материалы</h5>
-							Чехлы на матрсы производятся из матрилаов пропускающих воздух на 70%
+							Антиаллергенное покрытие
 						</div>
 					</div>
 				</div>
@@ -129,10 +125,12 @@
 			<h5>160 пружин на 1 м2</h5>
 			</h3>
 			<div class="row">
-
-
 				<div class="col-sm-4">
 					<div class="product-section">
+
+					  <div class="discount-holder-corner"><div> -40 % </div></div>
+
+
 						<div class="col-sm-12">
 							<h4 class="an" data-time='10' data-effect='fadeInLeft animated'>Simplex</h4>
 							<img src="img/matress1.jpg" class="img-responsive center-block an" data-time='500' data-effect='flipInX animated'>
@@ -231,7 +229,6 @@
 							<div class="an discount-holder" data-time='1000' data-effect='flipInY animated'><div>-10%</div></div>
 							<div class="an" data-time='10' data-effect='flipInY animated'>
 								<h6>Характеристики</h6>
-
 								<ul class="list-unstyled">
 									<li><i class="fa fa-cogs" aria-hidden="true"></i>  Пружинный Блок:  Bonell</li>
 									<li><i class="fa fa-align-justify" aria-hidden="true"></i>  Слои: термовойлок с 2-х сторон</li>
@@ -262,7 +259,7 @@
 							</form>
 						</div>
 					</div>
-				</div>			
+				</div>
 				<div class="col-sm-4">
 					<div class="product-section">
 						<div class="col-sm-12">
@@ -391,16 +388,69 @@
 								<div class="form-group">
 									<button type="submit" class="btn btn-success">Заказать</button>
 								</div>
-								
 							</form>
 						</div>
 					</div>
 				</div>
-				
-				
-				
 			</div>
 		</div>
 	</div>
+
+
+
+<!-- Trigger to open Modal -->
+
+
+<button data-izimodal-open="#modal" data-izimodal-transitionin="fadeInUp">  Open  </button>
+<!-- Modal structure -->
+<div id="modal" class="iziModal" data-izimodal-group="alerts" data-izimodal-title="SUKA EBANNA"  data-izimodal-openFullscreen="true">
+  <p style="padding: 10px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, nisi nihil, autem soluta voluptatum repudiandae doloribus tempore animi illum quas rerum ipsa. Sunt quaerat impedit, totam accusantium. Libero, error sed!
+
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Sign in</button>
+    </div>
+  </div>
+</form>
+
+
+  </p>
+
+
+</div>
+
+
+<script type="text/javascript">
+
+  $(document).ready(function () {
+    $(".iziModal").iziModal({
+    });
+
+  });
+
+</script>
+
 </body>
 </html>
