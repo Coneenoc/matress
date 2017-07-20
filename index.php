@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="iziModal/css/iziModal.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css?ver=<?=rand(763324,7879872987)?>">
+		<link rel="stylesheet" href="css/style.css?ver=<?=rand(763324,7879872987)?>">
 
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -90,7 +90,7 @@
 				</div>
 			</div>	
             <div class="row">
-				<div class="col-sm-4 col-xs-6">
+				<div class="col-sm-4">
 					<div class="advantages">
 						<i class="fa fa-cloud-upload"></i>
 						<div class="description">
@@ -99,7 +99,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-4 col-xs-6">
+				<div class="col-sm-4">
 					<div class="advantages">
 						<i class="fa fa-bug"></i>
 						<div class="description">
@@ -107,7 +107,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-4 col-xs-6">
+				<div class="col-sm-4">
 					<div class="advantages">
 						<i class="fa fa-leaf"></i>
 						<div class="description">
@@ -165,7 +165,7 @@
 							</table>
 							<form class="form">
 								<div class="form-group">
-									<button type="submit" class="btn btn-success">Заказать</button>
+									<button type="submit" class="btn btn-success order-now">Заказать</button>
 								</div>
 								
 							</form>
@@ -210,7 +210,7 @@
 							</table>
 							<form class="form">
 								<div class="form-group">
-									<button type="submit" class="btn btn-success">Заказать</button>
+									<button type="submit" class="btn btn-success order-now">Заказать</button>
 								</div>
 								
 							</form>
@@ -253,7 +253,7 @@
 							</table>
 							<form class="form">
 								<div class="form-group">
-									<button type="submit" class="btn btn-success">Заказать</button>
+									<button type="submit" class="btn btn-success order-now">Заказать</button>
 								</div>
 								
 							</form>
@@ -298,7 +298,7 @@
 							</table>
 							<form class="form">
 								<div class="form-group">
-									<button type="submit" class="btn btn-success">Заказать</button>
+									<button type="submit" class="btn btn-success order-now">Заказать</button>
 								</div>
 								
 							</form>
@@ -343,7 +343,7 @@
 							</table>
 							<form class="form">
 								<div class="form-group">
-									<button type="submit" class="btn btn-success">Заказать</button>
+									<button type="submit" class="btn btn-success order-now">Заказать</button>
 								</div>
 								
 							</form>
@@ -386,7 +386,47 @@
 							</table>
 							<form class="form">
 								<div class="form-group">
-									<button type="submit" class="btn btn-success">Заказать</button>
+								<span class="btn btn-success order-now" data-izimodal-transitionin="fadeInDown" data-izimodal-open="#matress1">Заказать</span>
+										<div id="matress1" class="iziModal" data-izimodal-group="alerts" data-izimodal-title="Матрасс 'Aura'"  data-izimodal-width="1024px">
+                                           <div class="container-fluid modal-window">
+											<div class="row">
+												<div class="col-sm-4">
+                                                  <img src="img/matress1.jpg" class="img-responsive center-block">
+												</div>
+												<div class="col-sm-8">
+												<p class="modal-description"> Бюджетный вариант из данной серии матрасов. Основой матраса является пружинный блок Bonnel – бесшумный, прочный, обеспечивающий оптимальную поддержку позвоночника. Пружинный блок защищен с обеих сторон современным материалом – термовойлоком (нетканый материал, прочный, упругий, плотный, устойчив к влаге, чрезвычайно легкий ). Покрытие матраса выполнено из высококачественного синтетического материала , простеганного на ППУ 1см, которое придает мягкость и комфорт матрасу. Максимальная нагрузка на 1 спальное место не более 80 кг. Высота матраса – 16 см. Матрас – мягкий. Гарантия - 12 месяцев. Срок службы – не менее 6 лет	
+												</p>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-sm-4">
+													<div class="prices">
+														<del>17 500 тг</del>
+														<div class="price">13 420 тг. <small>за м<sup>2</sup></small></div>
+													</div>
+
+
+												</div>
+												<div class="col-sm-5">
+												<h6>Характеристики</h6>
+														<ul class="list-unstyled">
+															<li><i class="fa fa-cogs" aria-hidden="true"></i>  Пружинный Блок:  Bonell</li>
+															<li><i class="fa fa-align-justify" aria-hidden="true"></i>  Слои: термовойлок с 2-х сторон</li>
+															<li><i class="fa fa-cloud-download" aria-hidden="true"></i>  Жесткость : 1 жесткий, 2 жесткий</li>
+															<li><i class="fa fa-download" aria-hidden="true"></i>  Нагрузка на 1 место: до 90 кг.</li>
+															<li><i class="fa fa-arrows-v" aria-hidden="true"></i>  Высота матраса : 16 см.</li>
+														</ul>
+												</div>
+												<div class="col-sm-3">lorem 4</div>
+											</div>
+
+
+
+
+										  </div>	
+										</div>
+
 								</div>
 							</form>
 						</div>
@@ -398,54 +438,11 @@
 
 
 
-<!-- Trigger to open Modal -->
-
-
-<button data-izimodal-open="#modal" data-izimodal-transitionin="fadeInUp">  Open  </button>
-<!-- Modal structure -->
-<div id="modal" class="iziModal" data-izimodal-group="alerts" data-izimodal-title="SUKA EBANNA"  data-izimodal-openFullscreen="true">
-  <p style="padding: 10px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, nisi nihil, autem soluta voluptatum repudiandae doloribus tempore animi illum quas rerum ipsa. Sunt quaerat impedit, totam accusantium. Libero, error sed!
-
-<form class="form-horizontal">
-  <div class="form-group">
-    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <div class="checkbox">
-        <label>
-          <input type="checkbox"> Remember me
-        </label>
-      </div>
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-default">Sign in</button>
-    </div>
-  </div>
-</form>
-
-
-  </p>
-
-
-</div>
-
-
 <script type="text/javascript">
 
   $(document).ready(function () {
     $(".iziModal").iziModal({
+    	headerColor: '#489FDF',
     });
 
   });

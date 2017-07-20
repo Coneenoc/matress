@@ -59,14 +59,15 @@ body {
   position: relative;
   overflow: hidden;
   background: #fff;
-  padding: 15px;
+  padding-top: 10px;
   margin: 25px 0;
   border: 1px solid #eee;
-  border-radius: 3px;
+  border-bottom:2px solid #6ab3e8;
 }
 
 .product-section:hover {
     box-shadow: 0 2px 3px #ddd;
+   border-bottom-color: #489FDF;
 }
 
 
@@ -83,7 +84,7 @@ body {
     top: 10px;
     left: 10px;
     z-index: 100;
-    font-size: 16px;
+    font-size: 130%;
     color: #ff6e6e;
     font-family: 'Lobster', cursive;
     text-shadow: 1px 1px 1px #999;
@@ -100,7 +101,7 @@ body {
 }
 
 .prices del {
-	font-size:18px;
+	font-size:130%;
 	color:#999;
 }
 
@@ -122,7 +123,6 @@ body {
 
 .product-section ul li {
 	padding: 3px 0;
-	font-size: 13px;
 }
 
 .product-section ul li i {
@@ -212,14 +212,35 @@ border-radius: 30px;
 
 .prices-for-sizes td {
     font-size: 120%;
+
 }
+
+
+
+
+/*   */
+
+
+.modal-window {
+    font-size: 12px;
+}
+
+
+
+.modal-description {
+  text-align: justify;
+  padding-top: 20px;
+}
+
+
 
 
 
 /* customize iziModal */
 
-.iziModal {
-
+.iziModal-header-title {
+    font-family: 'El Messiri', sans-serif!important;
+    font-size: 20px!important;
 }
 
 
@@ -329,6 +350,12 @@ font-family: "Arial Narrow";
 
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
+
+      .top-div {
+        background:url('../img/bg_new.jpg') center center no-repeat rgba(0, 0, 0, 0.5) fixed;
+        padding: 50px 0;
+        color:#fff;
+       }
 
 
     }
