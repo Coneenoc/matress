@@ -8,7 +8,7 @@ font-family: 'El Messiri', sans-serif;
 
 body {
 	font-size:13px;
-	color:#333;
+	color:#444;
 	overflow-x:hidden; 
 	font-family: Tahoma,'El Messiri', sans-serif;
 }
@@ -55,9 +55,25 @@ body {
 }
 
 .product-section {
-  padding-bottom: 25px;
+  display: table;
+  background: #fff;
+  padding: 15px;
   margin: 25px 0;
-  border-bottom: 1px dashed #eee;
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+
+.product-section:hover {
+    box-shadow: 0 2px 3px #ddd;
+}
+
+
+.product-section  table {
+  font-family: 'El Messiri', sans-serif;
+}
+
+.product-section img {
+    padding: 0 25px;
 }
 
 .product-section .discount {
@@ -66,10 +82,15 @@ body {
     left: 10px;
     z-index: 100;
     font-size: 16px;
-    color: red;
+    color: #ff6e6e;
     font-family: 'Lobster', cursive;
     text-shadow: 1px 1px 1px #999;
 }
+
+.prices {
+    text-align: center;
+}
+
 
 .prices * {
 	font-family: 'Pattaya', sans-serif;
@@ -81,28 +102,30 @@ body {
 	color:#999;
 }
 
-.prices .price>small {
-	color:red;
+.price>small, .price>small>sup {
+	color:#ff6e6e;
+    font-size: 14px;
 }
 
 .product-section h4 {
 	font-family: 'Pattaya', sans-serif;
 	color:#489FDF;
 	text-align: center;
-	font-size:25px;
 }
 
-.product-section h5 {
+.product-section h6 {
 	font-weight: bold;
 }
 
 
 .product-section ul li {
 	padding: 3px 0;
+	font-size: 13px;
 }
 
 .product-section ul li i {
 	padding-right: 10px;
+    color:#999;
 }
 
 
@@ -111,8 +134,12 @@ body {
 	font-family:'Lobster', cursive, Arial;
 }
 
+.container>h3+h5 {
+font-family: 'El Messiri', sans-serif;
+}
+
 span.highlight {
-	color:red;
+	color:#ff6e6e;
 }
 
 .container>h3 span {
@@ -126,9 +153,42 @@ span.highlight {
 
 
 .form button {
-  margin-top: 15px;
+
 }
 
+
+.discount-holder {
+position: absolute;
+top:100px;
+left:10px;
+height:60px;
+width:60px;
+background: #ff6e6e;
+padding: 5px;
+border-radius: 30px;
+}
+
+.discount-holder>div {
+  border-radius: 30px;
+  text-align: center;
+  width:100%;
+  border:1px solid #fff;
+  height:100%;
+  font-size: 18px;
+  font-family: 'Lobster', cursive;
+  line-height: 50px;
+  color:#fff;
+}
+
+
+
+.sizes td {
+    font-weight: bold;
+}
+
+.prices-for-sizes td {
+    font-size: 120%;
+}
 
 
 /* menu  custom style */
@@ -145,6 +205,7 @@ font-family: "Arial Narrow";
 #custom-bootstrap-menu.navbar-default .navbar-brand {
     color: #fff;
     font-family: 'Lobster', cursive;
+    font-size: 25px;
 }
 #custom-bootstrap-menu.navbar-default {
     font-size: 14px;
@@ -209,7 +270,9 @@ font-family: "Arial Narrow";
 
     /* Medium Devices, Desktops */
     @media only screen and (min-width : 992px) {
-
+        .product-section img {
+           padding: 0 ;
+         }
     }
 
     /* Large Devices, Wide Screens */
