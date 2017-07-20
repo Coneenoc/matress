@@ -9,8 +9,12 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css?ver=<?=rand(763324,7879872987)?>">
+
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
 		<script type="text/javascript">
 			$('documnet').ready(function() {
 				var $animation_elements = $('.an');
@@ -45,7 +49,12 @@
 			}
 			$window.on('scroll resize', check_if_in_view);
 		$window.trigger('scroll');
+
 		$("#demo01").animatedModal();
+
+
+           $("#demo01").animatedModal();
+
 			});
 		</script>
 	</head>
@@ -120,6 +129,8 @@
 			<h5>160 пружин на 1 м2</h5>
 			</h3>
 			<div class="row">
+
+
 				<div class="col-sm-4">
 					<div class="product-section">
 						<div class="col-sm-12">
@@ -130,8 +141,6 @@
 								<div class="price">9 000 тг. <small>за м<sup>2</sup></small></div>
 							</div>
 							<div class="an discount-holder" data-time='1000' data-effect='flipInY animated'><div>-10%</div></div>
-							
-							
 							<div class="an" data-time='10' data-effect='flipInY animated'>
 								<h6>Характеристики</h6>
 								<ul class="list-unstyled">
@@ -222,6 +231,7 @@
 							<div class="an discount-holder" data-time='1000' data-effect='flipInY animated'><div>-10%</div></div>
 							<div class="an" data-time='10' data-effect='flipInY animated'>
 								<h6>Характеристики</h6>
+
 								<ul class="list-unstyled">
 									<li><i class="fa fa-cogs" aria-hidden="true"></i>  Пружинный Блок:  Bonell</li>
 									<li><i class="fa fa-align-justify" aria-hidden="true"></i>  Слои: термовойлок с 2-х сторон</li>
@@ -252,8 +262,7 @@
 							</form>
 						</div>
 					</div>
-				</div>
-				
+				</div>			
 				<div class="col-sm-4">
 					<div class="product-section">
 						<div class="col-sm-12">
@@ -391,19 +400,6 @@
 				
 				
 			</div>
-		</div>
-	</div>
-	<!--Call your modal-->
-	<a id="demo01" href="#animatedModal">DEMO01</a>
-	<!--DEMO01-->
-	<div id="animatedModal">
-		<!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-		<div class="close-animatedModal">
-			CLOSE MODAL
-		</div>
-		
-		<div class="modal-content">
-			<!--Your modal content goes here-->
 		</div>
 	</div>
 </body>

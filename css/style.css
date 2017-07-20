@@ -56,7 +56,10 @@ body {
 
 .product-section {
   display: table;
+<<<<<<< HEAD
   background: #fff;
+=======
+>>>>>>> b47c5f7e9665fd360ce619c9c91b58c71c12355d
   padding: 15px;
   margin: 25px 0;
   border: 1px solid #eee;
