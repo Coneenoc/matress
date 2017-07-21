@@ -127,7 +127,7 @@ body {
 
 .product-section ul li i {
 	padding-right: 10px;
-    color:#999;
+  color:#489FDF;
 }
 
 
@@ -156,6 +156,11 @@ span.highlight {
 
 .form button {
 
+}
+
+
+label {
+  font-size: 11px;
 }
 
 
@@ -268,6 +273,7 @@ font-family: "Arial Narrow";
     background-color: #489FDF;
     border-bottom-width: 0px;
     box-shadow: 0 1px 2px #666;
+    box-shadow: inset 0 -10px 15px -12px rgba(0, 0, 0, 0.3), 0 0 0px #555;
     border-bottom: 2px solid #f4f4f4;
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {

@@ -27,7 +27,7 @@
 				
 				$.each($animation_elements, function() {
 				var $element = $(this);
-				var $timeout = $(this).attr('data-time');
+				var $timeout = parseInt($(this).attr('data-time'));
 				var $effect = $(this).attr('data-effect');
 				var element_height = $element.outerHeight();
 				var element_top_position = $element.offset().top;
@@ -37,11 +37,17 @@
 				if ((element_bottom_position >= window_top_position) &&
 				(element_top_position <= window_bottom_position) &&
 				($element.hasClass($effect)==false)) {
+
+                      
+                    var $randNUm = parseInt(Math.floor(Math.random()*3000)+200);
+                    var $randTimeOut = $randNUm+$timeout;
+
+					//console.log('delay now is '+$randTimeOut);
 		
-		setTimeout(function() {
+		       setTimeout(function() {
 					$element.addClass($effect).css('opacity',1);
 					//console.log($element.prop('nodeName'));
-					}, $timeout);
+					}, $randTimeOut);
 				
 				} else {
 
@@ -384,7 +390,6 @@
 									<td>65 000 тг.</td>
 								</tr>
 							</table>
-							<form class="form">
 								<div class="form-group">
 								<span class="btn btn-success order-now" data-izimodal-transitionin="fadeInDown" data-izimodal-open="#matress1">Заказать</span>
 										<div id="matress1" class="iziModal" data-izimodal-group="alerts" data-izimodal-title="Матрасс 'Aura'"  data-izimodal-width="1024px">
@@ -392,24 +397,20 @@
 											<div class="row">
 												<div class="col-sm-4">
                                                   <img src="img/matress1.jpg" class="img-responsive center-block">
-												</div>
-												<div class="col-sm-8">
-												<p class="modal-description"> Бюджетный вариант из данной серии матрасов. Основой матраса является пружинный блок Bonnel – бесшумный, прочный, обеспечивающий оптимальную поддержку позвоночника. Пружинный блок защищен с обеих сторон современным материалом – термовойлоком (нетканый материал, прочный, упругий, плотный, устойчив к влаге, чрезвычайно легкий ). Покрытие матраса выполнено из высококачественного синтетического материала , простеганного на ППУ 1см, которое придает мягкость и комфорт матрасу. Максимальная нагрузка на 1 спальное место не более 80 кг. Высота матраса – 16 см. Матрас – мягкий. Гарантия - 12 месяцев. Срок службы – не менее 6 лет	
-												</p>
-												</div>
-											</div>
-
-											<div class="row">
-												<div class="col-sm-4">
-													<div class="prices">
+                                                  	<div class="prices">
 														<del>17 500 тг</del>
 														<div class="price">13 420 тг. <small>за м<sup>2</sup></small></div>
 													</div>
 
 
 												</div>
-												<div class="col-sm-5">
-												<h6>Характеристики</h6>
+												<div class="col-sm-8">
+												<p class="modal-description"> Бюджетный вариант из данной серии матрасов. Основой матраса является пружинный блок Bonnel – бесшумный, прочный, обеспечивающий оптимальную поддержку позвоночника. Пружинный блок защищен с обеих сторон современным материалом – термовойлоком (нетканый материал, прочный, упругий, плотный, устойчив к влаге, чрезвычайно легкий ). Покрытие матраса выполнено из высококачественного синтетического материала , простеганного на ППУ 1см, которое придает мягкость и комфорт матрасу. 
+												</p>
+												<hr>
+												<div class="row">
+													<div class="col-sm-5">
+													<h6>Характеристики</h6>
 														<ul class="list-unstyled">
 															<li><i class="fa fa-cogs" aria-hidden="true"></i>  Пружинный Блок:  Bonell</li>
 															<li><i class="fa fa-align-justify" aria-hidden="true"></i>  Слои: термовойлок с 2-х сторон</li>
@@ -417,18 +418,67 @@
 															<li><i class="fa fa-download" aria-hidden="true"></i>  Нагрузка на 1 место: до 90 кг.</li>
 															<li><i class="fa fa-arrows-v" aria-hidden="true"></i>  Высота матраса : 16 см.</li>
 														</ul>
+													</div>
+													 <hr class="visible-xs">
+													<div class="col-sm-7">
+														<h6>Оформление заказа</h6>
+														<form class="form-horizontal">
+															<div class="form-group">
+																<label for="inputEmail3" class="col-sm-2 control-label">Имя</label>
+																<div class="col-sm-10">
+																	<input type="email" class="input-sm form-control" id="inputEmail3" placeholder="Евгений">
+																</div>
+															</div>
+															<div class="form-group">
+																<label for="inputPassword3" class="col-sm-2 control-label">Номер</label>
+																<div class="col-sm-10">
+																	<input type="password" class="input-sm form-control" id="inputPassword3" placeholder="7 (ХХХ) ХХХ ХХ ХХ">
+																</div>
+															</div>
+
+															<div class="form-group">
+																<label for="inputPassword3" class="col-sm-2 control-label">Размер</label>
+																<div class="col-sm-10">
+																<select class="form-control input-sm">
+																  <option>80х190</option>
+																  <option>80х190</option>
+																  <option>80х190</option>
+																  <option>80х190</option>
+																  <option>80х190</option>
+																  <option>80х190</option>
+																  <option>80х190</option>
+																  <option>80х190</option>
+																  <option>80х190</option>
+																  <option>80х190</option>
+																  <option>80х190</option>
+																  <option>80х190</option>
+																  <option>80х190</option>
+																  <option>80х190</option>
+																  <option>80х190</option>
+																  <option>80х190</option>
+																  <option>80х190</option>
+																  <option>80х190</option>
+																  <option>80х190</option>
+																  <option>80х190</option>
+																  <option>80х190</option>
+																</select>
+																</div>
+															</div>
+															
+															<div class="form-group">
+																<div class="col-sm-offset-2 col-sm-10">
+																	<button type="submit" class="btn btn-success">Отправить</button>
+																</div>
+															</div>
+														</form>
+													</div>
 												</div>
-												<div class="col-sm-3">lorem 4</div>
+ 												</div>
 											</div>
-
-
-
 
 										  </div>	
 										</div>
-
 								</div>
-							</form>
 						</div>
 					</div>
 				</div>
