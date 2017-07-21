@@ -98,7 +98,7 @@
             <div class="row">
 				<div class="col-sm-4">
 					<div class="advantages">
-						<i class="fa fa-cloud-upload"></i>
+						<i class="fa fa-usd" aria-hidden="true"></i>
 						<div class="description">
 							<h5>Отличные цены</h5>
 							 Цены всегда актульны и ниже рыночных 70%
@@ -107,7 +107,7 @@
 				</div>
 				<div class="col-sm-4">
 					<div class="advantages">
-						<i class="fa fa-bug"></i>
+						<i class="fa fa-bug" aria-hidden="true"></i>
 						<div class="description">
 							Антибактерилаьная обработка
 						</div>
@@ -115,7 +115,7 @@
 				</div>
 				<div class="col-sm-4">
 					<div class="advantages">
-						<i class="fa fa-leaf"></i>
+						<i class="fa fa-leaf" aria-hidden="true"></i>
 						<div class="description">
 							Антиаллергенное покрытие
 						</div>
@@ -403,6 +403,30 @@
 													</div>
 
 
+													<div class="matress-advantages">
+														  <div class="row">
+														  	 <div class="col-xs-4">
+														  	 	<i class="fa fa-bug"></i>
+														  	 	<div class="ma-description">
+														  	 		Антибактериальная обработка
+														  	 	</div>
+														  	 </div>
+														  	<div class="col-xs-4">
+														  	 	<i class="fa fa-cloud-upload"></i>
+														  	 	<div class="ma-description">
+														  	 		Дышащие матриалы
+														  	 	</div>
+														  	 </div>
+														  	 <div class="col-xs-4">
+														  	 	<i class="fa fa-leaf"></i>
+														  	 	<div class="ma-description">
+														  	 		Антиаллергенное покрытие
+														  	 	</div>
+														  	 </div>
+														  </div>
+													</div>
+
+
 												</div>
 												<div class="col-sm-8">
 												<p class="modal-description"> Бюджетный вариант из данной серии матрасов. Основой матраса является пружинный блок Bonnel – бесшумный, прочный, обеспечивающий оптимальную поддержку позвоночника. Пружинный блок защищен с обеих сторон современным материалом – термовойлоком (нетканый материал, прочный, упругий, плотный, устойчив к влаге, чрезвычайно легкий ). Покрытие матраса выполнено из высококачественного синтетического материала , простеганного на ППУ 1см, которое придает мягкость и комфорт матрасу. 
@@ -417,10 +441,12 @@
 															<li><i class="fa fa-cloud-download" aria-hidden="true"></i>  Жесткость : 1 жесткий, 2 жесткий</li>
 															<li><i class="fa fa-download" aria-hidden="true"></i>  Нагрузка на 1 место: до 90 кг.</li>
 															<li><i class="fa fa-arrows-v" aria-hidden="true"></i>  Высота матраса : 16 см.</li>
+															<li><i class="fa fa-arrows-v" aria-hidden="true"></i>  Срок службы : 6-8 лет</li>
 														</ul>
 													</div>
-													 <hr class="visible-xs">
 													<div class="col-sm-7">
+													   <hr class="visible-xs">
+													    <div class="clearfix"></div>
 														<h6>Оформление заказа</h6>
 														<form class="form-horizontal">
 															<div class="form-group">
@@ -432,7 +458,7 @@
 															<div class="form-group">
 																<label for="inputPassword3" class="col-sm-2 control-label">Номер</label>
 																<div class="col-sm-10">
-																	<input type="password" class="input-sm form-control" id="inputPassword3" placeholder="7 (ХХХ) ХХХ ХХ ХХ">
+																	<input type="text" class="input-sm form-control" id="inputPassword3" placeholder="7 (ХХХ) ХХХ ХХ ХХ">
 																</div>
 															</div>
 

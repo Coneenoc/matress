@@ -221,6 +221,24 @@ border-radius: 30px;
 }
 
 
+.matress-advantages {
+  text-align: center;
+}
+
+.matress-advantages i {
+  font-size:26px;
+  color: #489FDF;
+}
+
+.ma-description {
+  font-size:10px;
+}
+
+
+.matress-advantages i {
+  padding: 15px 0;
+}
+
 
 
 /*   */
