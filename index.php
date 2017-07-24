@@ -21,14 +21,29 @@
 	<!-- bxslider JS -->
 	<script  src="bxslider/jquery.bxslider-rahisified.js"></script>
 	<script type="text/javascript">
-		$('documnet').ready(function() {
+		$(document).ready(function() {
 			$('.bxslider').bxSlider({
 				adaptiveHeight: true,
 				});
 		});
 	</script>
+	
+
 	<script type="text/javascript">
-		$('documnet').ready(function() {
+
+	$(document).on('change','.calculate',function(){
+
+           var $thisPrice = $(this).attr('data-price');
+           var $thisMultiplier = $('option:selected',this).attr('data-multiplier');
+           var $finalPrice = ($thisPrice*$thisMultiplier).toLocaleString('ru');
+           $(this).parents('form').find('span.pay_price').text($finalPrice + ' KZT');
+           $(this).parents('form').find('input.price').val($finalPrice);
+	});
+			
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
 			var $animation_elements = $('.an');
 	var $window = $(window);
 	function check_if_in_view() {
@@ -91,8 +106,10 @@
 				</div>
 			</div>
 		</div>
+
+
 		<div class="row">
-			<div class="col-sm-6 col-sm-push-3">
+			<div class="col-sm-8 col-sm-push-2">
 				<h1 class="attracter ">Лучшие Мтрасы для Сладких Снов</h1>
 				<h4 class="attracter-add text-center">
 				У нас вы можете преобрести отличную продкуцию на 30% ниже рыночной стоимости.
@@ -100,34 +117,69 @@
 				</h4>
 			</div>
 		</div>
+
+       <br><hr><br>
+
+
 		<div class="row">
+		<div class="col-md-8 col-md-push-2">
 			<ul class="bxslider">
 				<li>
-					<h1 class="attracter ">Лучшие Мтрасы для Сладких Снов</h1>
-					<h4 class="attracter-add text-center">
-					30% ниже рыночной стоимости.
-					Мы работаем на прямую спроизводителем матрасов.
-					</h4>
-					
+				<div class="col-sm-4">
+				    <div class="advantages-slider center-block">
+				    	<i class="fa fa-usd" aria-hidden="true"></i>
+				    </div>
+				</div>
+
+               <div class="col-sm-8">
+                     <h1 class="attracter ">Цены ниже рыночных на <u>28%</u></h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+					Ab similique eligendi officia laborum consectetur earum, 
+					libero architecto, minus illo nesciunt possimus vel enim magnam labore voluptatem quas saepe in fugiat?
+					</p>
+				</div>					
 				</li>
+
+
 				<li>
-					<h1 class="attracter ">Мтрасы для Сладких Снов</h1>
-					<h4 class="attracter-add text-center">
-					У нас вы можете преобрести отличную продкуцию на 30% ниже рыночной стоимости.
-					Мы работаем на прямую спроизводителем матрасов.
-					</h4>
-					
+				<div class="col-sm-4">
+				 <div class="advantages-slider center-block">
+					<i class="fa fa-bug" aria-hidden="true"></i>
+					</div>
+				</div>
+
+               <div class="col-sm-8">
+                     <h1 class="attracter ">Цены ниже рыночных на <u>28%</u></h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+					Ab similique eligendi officia laborum consectetur earum, 
+					libero architecto, minus illo nesciunt possimus vel enim magnam labore voluptatem quas saepe in fugiat?
+					</p>
+				</div>					
 				</li>
+
 				<li>
-					<h1 class="attracter ">Лучшие Мтрасы </h1>
-					<h4 class="attracter-add text-center">
-					У нас вы можете преобрести отличную продкуцию .
-					Мы работаем на прямую спроизводителем матрасов.
-					</h4>
-					
+				<div class="col-sm-4">
+				 <div class="advantages-slider center-block">
+					<i class="fa fa-leaf" aria-hidden="true"></i>
+					</div>
+				</div>
+
+               <div class="col-sm-8">
+                     <h1 class="attracter ">Цены ниже рыночных на <u>28%</u></h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+					Ab similique eligendi officia laborum consectetur earum, 
+					libero architecto, minus illo nesciunt possimus vel enim magnam labore voluptatem quas saepe in fugiat?
+					</p>
+				</div>					
 				</li>
+
 			</ul>
+
+			</div>
 		</div>
+
+       <!--
+
 		<div class="row">
 			<div class="col-sm-4">
 				<div class="advantages">
@@ -155,6 +207,8 @@
 				</div>
 			</div>
 		</div>
+
+		-->
 	</div>
 </div>
 <div class="container-fluid">
@@ -377,12 +431,134 @@
 								<td>65 000 тг.</td>
 							</tr>
 						</table>
-						<form class="form">
+						
 							<div class="form-group">
-								<button type="submit" class="btn btn-success order-now">Заказать</button>
+								<span class="btn btn-success order-now" data-izimodal-transitionin="fadeInDown" data-izimodal-open="#matress2">Заказать</span>
+							<div id="matress2" class="iziModal" data-izimodal-group="alerts" data-izimodal-title="Матрасс 'Aura'"  data-izimodal-width="1140px">
+								<div class="container-fluid modal-window">
+									<div class="row">
+										<div class="col-sm-4">
+											<img src="img/matress1.jpg" class="img-responsive center-block">
+											<div class="prices">
+												<del>17 500 тг</del>
+												<div class="price">13 420 тг. <small>за м<sup>2</sup></small></div>
+											</div>
+											<div class="matress-advantages">
+												<div class="row">
+													<div class="col-xs-4">
+														<i class="fa fa-bug"></i>
+														<div class="ma-description">
+															Антибактериальная обработка
+														</div>
+													</div>
+													<div class="col-xs-4">
+														<i class="fa fa-cloud-upload"></i>
+														<div class="ma-description">
+															Дышащие матриалы
+														</div>
+													</div>
+													<div class="col-xs-4">
+														<i class="fa fa-leaf"></i>
+														<div class="ma-description">
+															Антиаллергенное покрытие
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										
+										<div class="col-sm-8">
+											
+											<div class="col-sm-5">
+												
+												<hr class="visible-xs">
+												<h6>Характеристики</h6>
+												<ul class="list-unstyled">
+													<li><i class="fa fa-cogs" aria-hidden="true"></i>  Пружинный Блок:  Bonell</li>
+													<li><i class="fa fa-align-justify" aria-hidden="true"></i>  Слои: термовойлок с 2-х сторон</li>
+													<li><i class="fa fa-cloud-download" aria-hidden="true"></i>  Жесткость : 1 жесткий, 2 жесткий</li>
+													<li><i class="fa fa-download" aria-hidden="true"></i>  Нагрузка на 1 место: до 90 кг.</li>
+													<li><i class="fa fa-arrows-v" aria-hidden="true"></i>  Высота матраса : 16 см.</li>
+													<li><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>  Срок службы : 6-8 лет</li>
+												</ul>
+												
+											</div>
+											<div class="col-sm-7">
+												<hr class="visible-xs">
+												<h6>Форма заказа</h6>
+												<form class="form-horizontal">
+													<!-- Text input-->
+													<div class="form-group">
+														<label class="col-md-4 control-label" for="textinput">Ваше имя</label>
+														<div class="col-md-8">
+															<input id="textinput" name="name" type="text" placeholder="Ваше имя" class="form-control input-sm" required="">
+														</div>
+													</div>
+													<!-- Text input-->
+													<div class="form-group">
+														<label class="col-md-4 control-label" for="textinput">Номер</label>
+														<div class="col-md-8">
+															<input id="textinput" name="phone" type="text" placeholder="7хххххххххх" class="form-control input-sm" required="">
+														</div>
+													</div>
+													<!-- Select Basic -->
+													<div class="form-group">
+														<label class="col-md-4 control-label" for="selectbasic">Размер</label>
+														<div class="col-md-8">
+															<select id="selectbasic" data-price="6900" name="size" class="calculate form-control input-sm">
+																<option data-multiplier="0" value="0">Размер</option>
+																<option data-multiplier="1.55" value="80 х 190 см">80 х 190 см </option>
+																<option data-multiplier="1.56" value="80 х 195 см">80 х 195 см </option>
+																<option data-multiplier="1.6" value="80 х 200 см">80 х 200 см </option>
+																<option data-multiplier="1.71" value="90 х 190 см">90 х 190 см </option>
+																<option data-multiplier="1.76" value="90 х 195 см">90 х 195 см </option>
+																<option data-multiplier="1.8" value="90 х 200 см">90 х 200 см </option>
+																<option data-multiplier="2.28" value="120 х 190 см">120 х 190 см</option>
+																<option data-multiplier="2.34" value="120 х 195 см">120 х 195 см</option>
+																<option data-multiplier="2.4" value="120 х 200 см">120 х 200 см</option>
+																<option data-multiplier="2.66" value="140 х 190 см">140 х 190 см</option>
+																<option data-multiplier="2.73" value="140 х 195 см">140 х 195 см</option>
+																<option data-multiplier="2.8" value="140 х 200 см">140 х 200 см</option>
+																<option data-multiplier="3.04" value="160 х 190 см">160 х 190 см</option>
+																<option data-multiplier="3.12" value="160 х 195 см">160 х 195 см</option>
+																<option data-multiplier="3.2" value="160 х 200 см">160 х 200 см</option>
+																<option data-multiplier="3.42" value="180 х 190 см">180 х 190 см</option>
+																<option data-multiplier="3.51" value="180 х 195 см">180 х 195 см</option>
+																<option data-multiplier="3.6" value="180 х 200 см">180 х 200 см</option>
+																<option data-multiplier="3.8" value="200 х 190 см">200 х 190 см</option>
+																<option data-multiplier="3.9" value="200 х 195 см">200 х 195 см</option>
+																<option data-multiplier="4" value="200 х 200 см">200 х 200 см</option>
+															</select>
+														</div>
+													</div>
+													<!-- Button -->
+													
+													<div class="form-group">
+														<label class="col-md-4 control-label" for="singlebutton">Оформить заказ</label>
+														<div class="col-md-8">
+														    <input type="hidden" name="price" class="price" value="0">
+															<button id="singlebutton" name="" class="btn btn-info">Заказать</button>
+															<span class="pay_price"> 0 KZ </span>
+														</div>
+													</div>
+												</form>
+											</div>
+											<div class="col-sm-12">
+												<hr>
+												
+												<h6>Описание</h6>
+												<p class="modal-description">Бюджетный вариант из данной серии матрасов. Основой матраса является пружинный блок Bonnel – бесшумный, прочный, обеспечивающий оптимальную поддержку позвоночника. Пружинный блок защищен с обеих сторон современным материалом – термовойлоком (нетканый материал, прочный, упругий, плотный, устойчив к влаге, чрезвычайно легкий ). Покрытие матраса выполнено из высококачественного синтетического материала , простеганного на ППУ 1см, которое придает мягкость и комфорт матрасу.
+												</p>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
 							</div>
 							
-						</form>
+					
 					</div>
 				</div>
 			</div>
@@ -422,7 +598,8 @@
 						</table>
 						<div class="form-group">
 							<span class="btn btn-success order-now" data-izimodal-transitionin="fadeInDown" data-izimodal-open="#matress1">Заказать</span>
-							<div id="matress1" class="iziModal" data-izimodal-group="alerts" data-izimodal-title="Матрасс 'Aura'"  data-izimodal-width="1200px">
+							
+							<div id="matress1" class="iziModal" data-izimodal-group="alerts" data-izimodal-title="Матрасс 'Aura'"  data-izimodal-width="1140px">
 								<div class="container-fluid modal-window">
 									<div class="row">
 										<div class="col-sm-4">
@@ -433,19 +610,19 @@
 											</div>
 											<div class="matress-advantages">
 												<div class="row">
-													<div class="col-xs-4 col-sm-12">
+													<div class="col-xs-4">
 														<i class="fa fa-bug"></i>
 														<div class="ma-description">
 															Антибактериальная обработка
 														</div>
 													</div>
-													<div class="col-xs-4 col-sm-12">
+													<div class="col-xs-4">
 														<i class="fa fa-cloud-upload"></i>
 														<div class="ma-description">
 															Дышащие матриалы
 														</div>
 													</div>
-													<div class="col-xs-4 col-sm-12">
+													<div class="col-xs-4">
 														<i class="fa fa-leaf"></i>
 														<div class="ma-description">
 															Антиаллергенное покрытие
@@ -454,110 +631,99 @@
 												</div>
 											</div>
 										</div>
+										
+										
 										<div class="col-sm-8">
-											<h6>Описание</h6>
-											<p class="modal-description"> Бюджетный вариант из данной серии матрасов. Основой матраса является пружинный блок Bonnel – бесшумный, прочный, обеспечивающий оптимальную поддержку позвоночника. Пружинный блок защищен с обеих сторон современным материалом – термовойлоком (нетканый материал, прочный, упругий, плотный, устойчив к влаге, чрезвычайно легкий ). Покрытие матраса выполнено из высококачественного синтетического материала , простеганного на ППУ 1см, которое придает мягкость и комфорт матрасу.
-											</p>
-											<hr>
-											<div class="row">
-												<div class="col-md-4 col-sm-6">
-													<h6>Характеристики</h6>
-													<ul class="list-unstyled">
-														<li><i class="fa fa-cogs" aria-hidden="true"></i>  Пружинный Блок:  Bonell</li>
-														<li><i class="fa fa-align-justify" aria-hidden="true"></i>  Слои: термовойлок с 2-х сторон</li>
-														<li><i class="fa fa-cloud-download" aria-hidden="true"></i>  Жесткость : 1 жесткий, 2 жесткий</li>
-														<li><i class="fa fa-download" aria-hidden="true"></i>  Нагрузка на 1 место: до 90 кг.</li>
-														<li><i class="fa fa-arrows-v" aria-hidden="true"></i>  Высота матраса : 16 см.</li>
-														<li><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>  Срок службы : 6-8 лет</li>
-													</ul>
-												</div>
-												<div class="col-md-8 col-sm-6">
-													<hr class="visible-xs">
-													<div class="clearfix"></div>
+											
+											<div class="col-sm-5">
+												
+												<hr class="visible-xs">
+												<h6>Характеристики</h6>
+												<ul class="list-unstyled">
+													<li><i class="fa fa-cogs" aria-hidden="true"></i>  Пружинный Блок:  Bonell</li>
+													<li><i class="fa fa-align-justify" aria-hidden="true"></i>  Слои: термовойлок с 2-х сторон</li>
+													<li><i class="fa fa-cloud-download" aria-hidden="true"></i>  Жесткость : 1 жесткий, 2 жесткий</li>
+													<li><i class="fa fa-download" aria-hidden="true"></i>  Нагрузка на 1 место: до 90 кг.</li>
+													<li><i class="fa fa-arrows-v" aria-hidden="true"></i>  Высота матраса : 16 см.</li>
+													<li><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>  Срок службы : 6-8 лет</li>
+												</ul>
+												
+											</div>
+											<div class="col-sm-7">
+												<hr class="visible-xs">
+												<h6>Форма заказа</h6>
+												<form class="form-horizontal">
+													<!-- Text input-->
+													<div class="form-group">
+														<label class="col-md-4 control-label" for="textinput">Ваше имя</label>
+														<div class="col-md-8">
+															<input id="textinput" name="textinput" type="text" placeholder="Ваше имя" class="form-control input-sm" required="">
+														</div>
+													</div>
+													<!-- Text input-->
+													<div class="form-group">
+														<label class="col-md-4 control-label" for="textinput">Номер</label>
+														<div class="col-md-8">
+															<input id="textinput" name="textinput" type="text" placeholder="7хххххххххх" class="form-control input-sm" required="">
+														</div>
+													</div>
+													<!-- Select Basic -->
+													<div class="form-group">
+														<label class="col-md-4 control-label" for="selectbasic">Размер</label>
+														<div class="col-md-8">
+															<select id="selectbasic" data-price="7800" name="selectbasic" class="calculate form-control input-sm">
+																<option data-multiplier="0" value="0">Размер</option>
+																<option data-multiplier="1.55" value="80 х 190 см">80 х 190 см </option>
+																<option data-multiplier="1.56" value="80 х 195 см">80 х 195 см </option>
+																<option data-multiplier="1.6" value="80 х 200 см">80 х 200 см </option>
+																<option data-multiplier="1.71" value="90 х 190 см">90 х 190 см </option>
+																<option data-multiplier="1.76" value="90 х 195 см">90 х 195 см </option>
+																<option data-multiplier="1.8" value="90 х 200 см">90 х 200 см </option>
+																<option data-multiplier="2.28" value="120 х 190 см">120 х 190 см</option>
+																<option data-multiplier="2.34" value="120 х 195 см">120 х 195 см</option>
+																<option data-multiplier="2.4" value="120 х 200 см">120 х 200 см</option>
+																<option data-multiplier="2.66" value="140 х 190 см">140 х 190 см</option>
+																<option data-multiplier="2.73" value="140 х 195 см">140 х 195 см</option>
+																<option data-multiplier="2.8" value="140 х 200 см">140 х 200 см</option>
+																<option data-multiplier="3.04" value="160 х 190 см">160 х 190 см</option>
+																<option data-multiplier="3.12" value="160 х 195 см">160 х 195 см</option>
+																<option data-multiplier="3.2" value="160 х 200 см">160 х 200 см</option>
+																<option data-multiplier="3.42" value="180 х 190 см">180 х 190 см</option>
+																<option data-multiplier="3.51" value="180 х 195 см">180 х 195 см</option>
+																<option data-multiplier="3.6" value="180 х 200 см">180 х 200 см</option>
+																<option data-multiplier="3.8" value="200 х 190 см">200 х 190 см</option>
+																<option data-multiplier="3.9" value="200 х 195 см">200 х 195 см</option>
+																<option data-multiplier="4" value="200 х 200 см">200 х 200 см</option>
+															</select>
+														</div>
+													</div>
+													<!-- Button -->
 													
-													<h6>Оформление заказа</h6>
-													<form class="form-horizontal">
-
-
-														<div class="form-group">
-															<label for="inputPassword3" class="col-sm-2 control-label">Номер</label>
-															<div class="col-sm-4">
-																<input type="text" class="input-sm form-control" id="inputPassword3" placeholder="7 (ХХХ) ХХХ ХХ ХХ">
-															</div>
-
-															<label for="inputPassword3" class="col-sm-2 control-label">Номер</label>
-															<div class="col-sm-4">
-																<input type="text" class="input-sm form-control" id="inputPassword3" placeholder="7 (ХХХ) ХХХ ХХ ХХ">
-															</div>
-														
-
-
-															<label for="inputPassword3" class="col-md-2 control-label">Размер</label>
-															<div class="col-md-4">
-																<select class="form-control input-sm">
-																	<option>80х190</option>
-																	<option>80х190</option>
-																	<option>80х190</option>
-																	<option>80х190</option>
-																	<option>80х190</option>
-																	<option>80х190</option>
-																	<option>80х190</option>
-																	<option>80х190</option>
-																	<option>80х190</option>
-																	<option>80х190</option>
-																	<option>80х190</option>
-																	<option>80х190</option>
-																	<option>80х190</option>
-																	<option>80х190</option>
-																	<option>80х190</option>
-																	<option>80х190</option>
-																	<option>80х190</option>
-																	<option>80х190</option>
-																	<option>80х190</option>
-																	<option>80х190</option>
-																	<option>80х190</option>
-																</select>
-															</div>
-														
-															<label for="inputPassword3" class="col-md-2 control-label">Шт</label>
-															<div class="col-md-4 ">
-																<input type="number" class="input-sm form-control" id="inputPassword3" placeholder="1" min='1' max='10' value="1">
-															</div>
-                                  
-                                                            <div class="col-xs-12">
-                                                             <label class="radio-inline">
-																<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked="checked"> Доставка
-															</label>
-															<label class="radio-inline">
-																<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Самовывоз
-															</label>
-															</div>
-
+													<div class="form-group">
+														<label class="col-md-4 control-label" for="singlebutton">Оформить заказ</label>
+														<div class="col-md-8">
+														    <input type="hidden" name="price" class="price" value="0">
+															<button id="singlebutton" name="singlebutton" class="btn btn-info">Заказать</button>
+															<span class="pay_price"> 0 KZ </span>
 														</div>
-
-										                     <div class="text-center  modal-price">13 420 KZT</div>
-														
-														<div class="form-group col-sm-12">
-																<button class="btn btn-primary center-block">Заказать</button>
-														</div>
-														
-													</form>
-												</div>
+													</div>
+												</form>
+											</div>
+											<div class="col-sm-12">
+												<hr>
+												
+												<h6>Описание</h6>
+												<p class="modal-description">Бюджетный вариант из данной серии матрасов. Основой матраса является пружинный блок Bonnel – бесшумный, прочный, обеспечивающий оптимальную поддержку позвоночника. Пружинный блок защищен с обеих сторон современным материалом – термовойлоком (нетканый материал, прочный, упругий, плотный, устойчив к влаге, чрезвычайно легкий ). Покрытие матраса выполнено из высококачественного синтетического материала , простеганного на ППУ 1см, которое придает мягкость и комфорт матрасу.
+												</p>
 											</div>
 										</div>
-									</div>
-									<div class="row">
-										<div class="col-md-12">
-											<small>
-											Обращаем ваше внимание что эта модель может быть изготовленна 
-											нестандартного размера, для просчет стоимости вы звоните по телефонам <br>
-											  <b> +7 747 130 82 89</b> | <b> +7 702 130 82 89</b>
-
-											</small>
-										</div>
+										
 									</div>
 								</div>
 							</div>
+
+
+
 						</div>
 					</div>
 				</div>

@@ -33,11 +33,16 @@ body {
 
 .top-div .attracter {
 	text-align: center;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	font-family: 'Lobster', cursive;
 	color:#fff;
 	text-shadow: 1px 1px 1px #333;
 }
+
+
+ .bxslider .attracter {
+   font-size:33px;
+ }
 
 .top-div .attracter-add {
 	font-family: 'El Messiri', sans-serif;
@@ -58,6 +63,26 @@ body {
 .advantages div.description {
 	padding: 0 15px;
 }
+
+
+
+
+.advantages-slider {
+  border:1px solid #fff;
+  height:150px;
+  width:150px;
+  border-radius: 150px;
+  text-align: center;
+}
+
+
+.advantages-slider i {
+  font-size:50px;
+  line-height: 150px;
+}
+
+
+
 
 
 .an {
@@ -259,6 +284,12 @@ border-radius: 30px;
 }
 
 
+.modal-window .pay_price {
+font-size: 16px; font-weight: bold;
+}
+
+
+
 .modal-window .input-group-addon, .modal-window .input-group-btn {
   width: inherit;
 
@@ -300,7 +331,6 @@ border-radius: 30px;
 /* customize iziModal */
 
 .iziModal-header-title {
-    font-family: 'El Messiri', sans-serif!important;
     font-size: 20px!important;
 }
 
@@ -374,27 +404,17 @@ font-family: "Arial Narrow";
     /* Custom, iPhone Retina */ 
     @media only screen and (min-width : 320px) {
 
-        .modal-window input,  .modal-window select {
-        margin-bottom: 10px;
-      } 
-
     }
 
     /* Extra Small Devices, Phones */ 
     @media only screen and (min-width : 480px) {
 
-       .modal-window input {
-        margin-bottom: 10px;
-      } 
-
+     
     }
 
     /* Small Devices, Tablets */
     @media only screen and (min-width : 768px) {
 
-      .modal-window input {
-        margin-bottom: 15px;
-      } 
    
     }
 
