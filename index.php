@@ -20,13 +20,17 @@
 	<script type="text/javascript" src="iziModal/js/iziModal.js"></script>
 	<!-- bxslider JS -->
 	<script  src="bxslider/jquery.bxslider-rahisified.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('.bxslider').bxSlider({
-				adaptiveHeight: true,
-				});
-		});
-	</script>
+		<script type="text/javascript">
+				$(document).ready(function() {
+				$('.bxslider').bxSlider({
+				              adaptiveHeight: true,
+				              onSlideAfter: function(currentSlide, totalSlides, currentSlideHtmlObject){
+				     
+			
+					        },
+					});
+			   });
+		</script>
 	
 
 	<script type="text/javascript">
@@ -88,7 +92,8 @@
 		<div class="container">
 			<div id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
 				<div class="container">
-					<div class="navbar-header"><a class="navbar-brand" href="#">
+					<div class="navbar-header">
+					<a class="navbar-brand" href="/">
 						<img src="img/logo.png">
 					</a>
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
@@ -133,9 +138,8 @@
 
                <div class="col-sm-8">
                      <h1 class="attracter ">Цены ниже рыночных на <u>28%</u></h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-					Ab similique eligendi officia laborum consectetur earum, 
-					libero architecto, minus illo nesciunt possimus vel enim magnam labore voluptatem quas saepe in fugiat?
+					<p>Мы работаем на прямую с заводом изготовителем, 
+					по этуму наши цены всегда актуальны и конкуреноспособны
 					</p>
 				</div>					
 				</li>
@@ -149,10 +153,10 @@
 				</div>
 
                <div class="col-sm-8">
-                     <h1 class="attracter ">Цены ниже рыночных на <u>28%</u></h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-					Ab similique eligendi officia laborum consectetur earum, 
-					libero architecto, minus illo nesciunt possimus vel enim magnam labore voluptatem quas saepe in fugiat?
+                     <h1 class="attracter ">Антипаразитарная обработка</h1>
+					<p>
+					   Вся продукция обрабатывается профессиональными антипаразитарными средствами, 
+					   это припятствую появлению и размножени паразитов внутри материалов.
 					</p>
 				</div>					
 				</li>
@@ -165,10 +169,9 @@
 				</div>
 
                <div class="col-sm-8">
-                     <h1 class="attracter ">Цены ниже рыночных на <u>28%</u></h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-					Ab similique eligendi officia laborum consectetur earum, 
-					libero architecto, minus illo nesciunt possimus vel enim magnam labore voluptatem quas saepe in fugiat?
+                     <h1 class="attracter ">Дышащие материалы</h1>
+					<p> Практически все модели которые мы призводим производятся из матераилов которые на 68% пропускают воздух. 
+					Благодаря этому матрас хорошо вентилируется и собирает на много меньше пыли.
 					</p>
 				</div>					
 				</li>
@@ -454,7 +457,7 @@
 													<div class="col-xs-4">
 														<i class="fa fa-cloud-upload"></i>
 														<div class="ma-description">
-															Дышащие матриалы
+															Дышащие материалы
 														</div>
 													</div>
 													<div class="col-xs-4">
@@ -469,7 +472,6 @@
 										
 										
 										<div class="col-sm-8">
-											
 											<div class="col-sm-5">
 												
 												<hr class="visible-xs">
@@ -482,7 +484,6 @@
 													<li><i class="fa fa-arrows-v" aria-hidden="true"></i>  Высота матраса : 16 см.</li>
 													<li><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>  Срок службы : 6-8 лет</li>
 												</ul>
-												
 											</div>
 											<div class="col-sm-7">
 												<hr class="visible-xs">
@@ -492,14 +493,14 @@
 													<div class="form-group">
 														<label class="col-md-4 control-label" for="textinput">Ваше имя</label>
 														<div class="col-md-8">
-															<input id="textinput" name="name" type="text" placeholder="Ваше имя" class="form-control input-sm" required="">
+															<input id="textinput" name="name" type="text" placeholder="Ваше имя*" class="form-control input-sm" required="">
 														</div>
 													</div>
 													<!-- Text input-->
 													<div class="form-group">
 														<label class="col-md-4 control-label" for="textinput">Номер</label>
 														<div class="col-md-8">
-															<input id="textinput" name="phone" type="text" placeholder="7хххххххххх" class="form-control input-sm" required="">
+															<input id="textinput" name="phone" type="text" placeholder="7хххххххххх*" class="form-control input-sm" required="">
 														</div>
 													</div>
 													<!-- Select Basic -->
@@ -538,7 +539,7 @@
 														<label class="col-md-4 control-label" for="singlebutton">Оформить заказ</label>
 														<div class="col-md-8">
 														    <input type="hidden" name="price" class="price" value="0">
-															<button id="singlebutton" name="" class="btn btn-info">Заказать</button>
+															<button id="singlebutton" name="" class="btn btn-info btn-sm">Заказать</button>
 															<span class="pay_price"> 0 KZ </span>
 														</div>
 													</div>
@@ -552,7 +553,9 @@
 												</p>
 											</div>
 										</div>
-										
+										<div class="col-sm-12">	
+                                            
+										</div>
 									</div>
 								</div>
 							</div>
@@ -619,7 +622,7 @@
 													<div class="col-xs-4">
 														<i class="fa fa-cloud-upload"></i>
 														<div class="ma-description">
-															Дышащие матриалы
+															Дышащие материалы
 														</div>
 													</div>
 													<div class="col-xs-4">
@@ -647,6 +650,16 @@
 													<li><i class="fa fa-arrows-v" aria-hidden="true"></i>  Высота матраса : 16 см.</li>
 													<li><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>  Срок службы : 6-8 лет</li>
 												</ul>
+
+												<hr>
+
+												<h6 class="attention">Внимание</h6>
+												<small>
+													Этот матрас можеть быть произведен не стандартного размера, при необходимости отметтьте соотвествующий пунки 
+													в форме заказа.
+												</small>
+
+
 												
 											</div>
 											<div class="col-sm-7">
@@ -697,13 +710,20 @@
 															</select>
 														</div>
 													</div>
+
+													<div class="form-group">
+														<label class="col-md-4 control-label" for="checkboxes">Не стандартный размер</label>
+														<div class="col-md-8">
+																<input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+														</div>
+													</div>
 													<!-- Button -->
 													
 													<div class="form-group">
 														<label class="col-md-4 control-label" for="singlebutton">Оформить заказ</label>
 														<div class="col-md-8">
 														    <input type="hidden" name="price" class="price" value="0">
-															<button id="singlebutton" name="singlebutton" class="btn btn-info">Заказать</button>
+															<button id="singlebutton" name="singlebutton" class="btn btn-sm btn-info">Заказать</button>
 															<span class="pay_price"> 0 KZ </span>
 														</div>
 													</div>
@@ -711,12 +731,19 @@
 											</div>
 											<div class="col-sm-12">
 												<hr>
-												
+				
 												<h6>Описание</h6>
 												<p class="modal-description">Бюджетный вариант из данной серии матрасов. Основой матраса является пружинный блок Bonnel – бесшумный, прочный, обеспечивающий оптимальную поддержку позвоночника. Пружинный блок защищен с обеих сторон современным материалом – термовойлоком (нетканый материал, прочный, упругий, плотный, устойчив к влаге, чрезвычайно легкий ). Покрытие матраса выполнено из высококачественного синтетического материала , простеганного на ППУ 1см, которое придает мягкость и комфорт матрасу.
 												</p>
 											</div>
 										</div>
+                                          
+
+                                          <div class="col-sm-12">
+                                          
+                                          	<hr>
+                                          </div>
+
 										
 									</div>
 								</div>

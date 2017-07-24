@@ -10,7 +10,7 @@ body {
 	font-size:13px;
 	color:#444;
 	overflow-x:hidden; 
-	font-family: Tahoma,'El Messiri', sans-serif;
+	font-family: Arial,'El Messiri', sans-serif;
 }
 
 
@@ -42,6 +42,7 @@ body {
 
  .bxslider .attracter {
    font-size:33px;
+   text-align: left;
  }
 
 .top-div .attracter-add {
@@ -68,8 +69,9 @@ body {
 
 
 .advantages-slider {
-  border:1px solid #fff;
+  border:5px solid #fff;
   height:150px;
+  box-shadow: 0 0 2px #333;
   width:150px;
   border-radius: 150px;
   text-align: center;
@@ -77,7 +79,9 @@ body {
 
 
 .advantages-slider i {
-  font-size:50px;
+  font-size:65px;
+  color: #489FDF;
+  text-shadow: 1px 0 4px #333;
   line-height: 150px;
 }
 
@@ -286,6 +290,11 @@ border-radius: 30px;
 
 .modal-window .pay_price {
 font-size: 16px; font-weight: bold;
+padding-left: 15px;
+}
+
+.modal-window .attention {
+  color:#ff6e6e;
 }
 
 
@@ -342,9 +351,6 @@ font-size: 16px; font-weight: bold;
 
 #custom-bootstrap-menu {
 
-	/*
-font-family: "Arial Narrow";
-*/
 }
 
 
@@ -354,8 +360,10 @@ font-family: "Arial Narrow";
     font-size: 25px;
 }
 #custom-bootstrap-menu.navbar-default {
-    font-size: 14px;
+    font-size: 13px;
     z-index:2;
+    font-weight: bold;
+    font-family: Arial;
     background-color: #489FDF;
     border-bottom-width: 0px;
     box-shadow: 0 1px 2px #666;
@@ -368,7 +376,7 @@ font-family: "Arial Narrow";
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
 #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
-    color: rgba(191, 191, 191, 1);
+    color: #eee;
     background-color: rgba(248, 248, 248, 0);
 }
 #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
