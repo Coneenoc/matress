@@ -94,7 +94,9 @@
 				<div class="container">
 					<div class="navbar-header">
 					<a class="navbar-brand" href="/">
-						<img src="img/logo.png">
+						<img src="img/logo.png" class="hidden-xs">
+						<img src="img/logo_small.png" class="visible-xs">
+
 					</a>
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 					</button>
@@ -439,7 +441,7 @@
 								<span class="btn btn-success order-now" data-izimodal-transitionin="fadeInDown" data-izimodal-open="#matress2">Заказать</span>
 							<div id="matress2" class="iziModal" data-izimodal-group="alerts" data-izimodal-title="Матрасс 'Aura'"  data-izimodal-width="1140px">
 								<div class="container-fluid modal-window">
-									<div class="row">
+									<div class="row modal-row">
 										<div class="col-sm-4">
 											<img src="img/matress1.jpg" class="img-responsive center-block">
 											<div class="prices">
@@ -604,7 +606,7 @@
 							
 							<div id="matress1" class="iziModal" data-izimodal-group="alerts" data-izimodal-title="Матрасс 'Aura'"  data-izimodal-width="1140px">
 								<div class="container-fluid modal-window">
-									<div class="row">
+									<div class="row modal-row">		                    
 										<div class="col-sm-4">
 											<img src="img/matress1.jpg" class="img-responsive center-block">
 											<div class="prices">

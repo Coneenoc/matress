@@ -297,6 +297,10 @@ padding-left: 15px;
   color:#ff6e6e;
 }
 
+.modal-row {
+  padding-top:20px;
+}
+
 
 
 .modal-window .input-group-addon, .modal-window .input-group-btn {
