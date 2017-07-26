@@ -7,10 +7,10 @@ font-family: 'El Messiri', sans-serif;
 
 
 body {
-	font-size:13px;
+	font-size:14px;
 	color:#333;
 	overflow-x:hidden; 
-	font-family: 'El Messiri', sans-serif;
+	font-family: Calibri,'El Messiri', sans-serif;
 }
 
 
@@ -168,7 +168,7 @@ body {
 	text-align: center;
 }
 
-.product-section h6 {
+.product-section h5 {
 	font-weight: bold;
 }
 
@@ -213,9 +213,18 @@ span.highlight {
   padding-bottom: 30px;
 }
 
+
+.choise-help {
+  background: #0b92f5;color:#fff;
+}
+
+.choise-help>.container {
+  padding: 25px;
+}
+
 .list-of-pro-and-cons {
   background: #fff;
-  padding:10px;
+  padding:10px 10px 20px 10px;
   border:1px solid #eee;
   border-bottom:2px solid #6ab3e8;
   margin-bottom: 30px;
@@ -246,7 +255,8 @@ span.highlight {
 
 
 label {
-  font-size: 11px;
+  font-family: Arial;
+  font-size: 12px;
 }
 
 
@@ -331,9 +341,12 @@ border-radius: 30px;
 
 
 .modal-window {
-    font-size: 12px;
+    font-size: 13px;
 }
 
+.modal-window label {
+  font-size: 12px;
+}
 
 .modal-window .pay_price {
 font-size: 16px; font-weight: bold;
@@ -401,8 +414,10 @@ padding-left: 15px;
 
 
 #custom-bootstrap-menu .dropdown-menu {
-    font-size: 13px;
+    /* font-size: 13px; */
+    background: #fff;
 }
+
 
 
 #custom-bootstrap-menu.navbar-default .navbar-brand {
@@ -411,7 +426,7 @@ padding-left: 15px;
     font-size: 25px;
 }
 #custom-bootstrap-menu.navbar-default {
-    font-size: 13px;
+    /* font-size: 13px; */
     z-index:2;
     font-weight: bold;
     background-color: #489FDF;

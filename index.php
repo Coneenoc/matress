@@ -142,7 +142,7 @@
 
 		<div class="row">
 			<div class="col-sm-push-1 col-sm-10">
-				<h1 class="attracter text-center">Лучшие Мтрасы для Сладких Снов</h1>
+				<h1 class="attracter text-center">Лучшие Матрасы для Сладких Снов</h1>
 				<h4 class="attracter-add text-center">
 				У нас вы можете преобрести отличную продкуцию на 30% ниже рыночной стоимости.
 				Мы работаем на прямую спроизводителем матрасов.
@@ -219,6 +219,7 @@
     		<div class="col-sm-3 ">
     		    <div class="list-of-pro-and-cons">
     		    	 <h4>Блок Bonell</h4>
+    		    	 <img src="img/bonell.jpg" class="img-responsive center-block"><hr>
     		    	  <ul class="list-unstyled">
     		    	  	<li><i class="glyphicon glyphicon-plus"></i> Низкая стоимость</li>
     		    	  	<li><i class="glyphicon glyphicon-plus"></i> Высота от 12 см </li>
@@ -227,13 +228,14 @@
     		    	  	<li><i class="glyphicon glyphicon-minus"></i> Не равномерная нагрузка</li>
     		    	  	<li><i class="glyphicon glyphicon-minus"></i> Срок службы до 4 лет</li>
     		    	  	<li><i class="glyphicon glyphicon-minus"></i> Низкий ортопедичесикй эффект</li>
-
     		    	  </ul>
+    		    	  <button class="btn btn-info center-block"> Посмотреть</button>
     		    </div>
     		</div>
     		<div class="col-sm-3 ">
     		    <div class="list-of-pro-and-cons">
     		    	 <h4>Блок PockerSpring</h4>
+    		    	 <img src="img/pocketspring.jpg" class="img-responsive center-block"><hr>
     		    	  <ul class="list-unstyled">
     		    	  	<li><i class="glyphicon glyphicon-plus"></i> 256 пружин на м<sup>2</sup></li>
     		    	  	<li><i class="glyphicon glyphicon-plus"></i> Бесшумный матрас</li>
@@ -243,11 +245,13 @@
     		    	  	<li><i class="glyphicon glyphicon-plus"></i> Хорошо вентилируется</li>
     		    	  	<li><i class="glyphicon glyphicon-minus"></i> Стоимость выше средней</li>
     		    	  </ul>
+    		    	  <button class="btn btn-info center-block"> Посмотреть</button>
     		    </div>
     		</div>
     		<div class="col-sm-3 ">
     		    <div class="list-of-pro-and-cons">
     		    	 <h4>Блок MultiPocket</h4>
+    		    	    <img src="img/multipocket.jpg" class="img-responsive center-block"><hr>
     		    	    <ul class="list-unstyled">
     		    	  	<li><i class="glyphicon glyphicon-plus"></i> 512 пружин на м<sup>2</sup></li>
     		    	  	<li><i class="glyphicon glyphicon-plus"></i> Бесшумный матрас</li>
@@ -257,12 +261,14 @@
     		    	  	<li><i class="glyphicon glyphicon-plus"></i> Хорошо вентилируется</li>
     		    	  	<li><i class="glyphicon glyphicon-minus"></i> Самая высокая стоимость</li>
     		    	  </ul>
+    		    	  <button class="btn btn-info center-block"> Посмотреть</button>
     		    </div>
     		</div>
 
     		<div class="col-sm-3 ">
     		    <div class="list-of-pro-and-cons">
     		    	 <h4>Блок Foam</h4>
+    		    	 <img src="img/foam.jpg" class="img-responsive center-block"><hr>
     		    	  <ul class="list-unstyled">
     		    	  	<li><i class="glyphicon glyphicon-plus"></i> Низкая стоимость</li>
     		    	  	<li><i class="glyphicon glyphicon-plus"></i> Равномерно распределяет нагрузку</li>
@@ -271,9 +277,32 @@
     		    	  	<li><i class="glyphicon glyphicon-plus"></i> Не равномерная нагрузка</li>
     		    	  	<li><i class="glyphicon glyphicon-minus"></i> Оносительно слабо вентилируется </li>
     		    	  	<li><i class="glyphicon glyphicon-minus"></i> Тяжелый при больших размерах</li>
-
     		    	  </ul>
+    		    	  <button class="btn btn-info center-block"> Посмотреть</button>
     		    </div>
+    		</div>
+    	</div>
+    </div>
+</div>
+
+
+<div class="container-fluid choise-help">
+    <div class="container">
+    	<div class="row">
+    		<div class="col-sm-8 col-sm-push-2">
+    		     <h4 class="text-center"> Если вы затрудняетесь c выбором оставьте заявку и наши консультанты свяжуться с вами в течении  <u> 10 минут </u></h4>
+    		     <hr>
+    			<form class="form" action="">
+    				<div class="form-group col-sm-5">
+    					<input type="text" class="form-control" name="" placeholder="Ваше имя">
+    				</div> 
+    				<div class="form-group col-sm-5">
+    					<input type="text" class="form-control" name="" placeholder="7 XXX XXX XX XX">
+    				</div>  
+    				<div class="form-group col-sm-2">
+    					<button class="btn btn-success">Перезвоните мне</button>
+    				</div> 
+    			</form>
     		</div>
     	</div>
     </div>
@@ -298,7 +327,7 @@
 						</div>
 						<div class="an discount-holder" data-time='1000' data-effect='flipInY animated'><div>-10%</div></div>
 						<div class="an" data-time='10' data-effect='flipInY animated'>
-							<h6>Характеристики</h6>
+							<h5>Характеристики</h5>
 							<ul class="list-unstyled">
 								<li><i class="fa fa-cogs" aria-hidden="true"></i>  Пружинный Блок:  Bonell</li>
 								<li><i class="fa fa-align-justify" aria-hidden="true"></i>  Слои: термовойлок с 2-х сторон</li>
@@ -343,7 +372,7 @@
 						
 						
 						<div class="an" data-time='10' data-effect='flipInY animated'>
-							<h6>Характеристики</h6>
+							<h5>Характеристики</h5>
 							<ul class="list-unstyled">
 								<li><i class="fa fa-cogs" aria-hidden="true"></i>  Пружинный Блок:  Bonell</li>
 								<li><i class="fa fa-align-justify" aria-hidden="true"></i>  Слои: термовойлок с 2-х сторон</li>
@@ -386,7 +415,7 @@
 						</div>
 						<div class="an discount-holder" data-time='1000' data-effect='flipInY animated'><div>-10%</div></div>
 						<div class="an" data-time='10' data-effect='flipInY animated'>
-							<h6>Характеристики</h6>
+							<h5>Характеристики</h5>
 							<ul class="list-unstyled">
 								<li><i class="fa fa-cogs" aria-hidden="true"></i>  Пружинный Блок:  Bonell</li>
 								<li><i class="fa fa-align-justify" aria-hidden="true"></i>  Слои: термовойлок с 2-х сторон</li>
@@ -431,7 +460,7 @@
 						
 						
 						<div class="an" data-time='10' data-effect='flipInY animated'>
-							<h6>Характеристики</h6>
+							<h5>Характеристики</h5>
 							<ul class="list-unstyled">
 								<li><i class="fa fa-cogs" aria-hidden="true"></i>  Пружинный Блок:  Bonell</li>
 								<li><i class="fa fa-align-justify" aria-hidden="true"></i>  Слои: термовойлок с 2-х сторон</li>
@@ -476,7 +505,7 @@
 						
 						
 						<div class="an" data-time='10' data-effect='flipInY animated'>
-							<h6>Характеристики</h6>
+							<h5>Характеристики</h5>
 							<ul class="list-unstyled">
 								<li><i class="fa fa-cogs" aria-hidden="true"></i>  Пружинный Блок:  Bonell</li>
 								<li><i class="fa fa-align-justify" aria-hidden="true"></i>  Слои: термовойлок с 2-х сторон</li>
@@ -540,7 +569,7 @@
 											<div class="col-sm-5">
 												
 												<hr class="visible-xs">
-												<h6>Характеристики</h6>
+												<h5>Характеристики</h5>
 												<ul class="list-unstyled">
 													<li><i class="fa fa-cogs" aria-hidden="true"></i>  Пружинный Блок:  Bonell</li>
 													<li><i class="fa fa-align-justify" aria-hidden="true"></i>  Слои: термовойлок с 2-х сторон</li>
@@ -552,7 +581,7 @@
 											</div>
 											<div class="col-sm-7">
 												<hr class="visible-xs">
-												<h6>Форма заказа</h6>
+												<h5>Форма заказа</h5>
 												<form class="form-horizontal">
 													<!-- Text input-->
 													<div class="form-group">
@@ -613,7 +642,7 @@
 											<div class="col-sm-12">
 												<hr>
 												
-												<h6>Описание</h6>
+												<h5>Описание</h5>
 												<p class="modal-description">Бюджетный вариант из данной серии матрасов. Основой матраса является пружинный блок Bonnel – бесшумный, прочный, обеспечивающий оптимальную поддержку позвоночника. Пружинный блок защищен с обеих сторон современным материалом – термовойлоком (нетканый материал, прочный, упругий, плотный, устойчив к влаге, чрезвычайно легкий ). Покрытие матраса выполнено из высококачественного синтетического материала , простеганного на ППУ 1см, которое придает мягкость и комфорт матрасу.
 												</p>
 											</div>
@@ -641,7 +670,7 @@
 						</div>
 						<div class="an discount-holder" data-time='1000' data-effect='flipInY animated'><div>-10%</div></div>
 						<div class="an" data-time='10' data-effect='flipInY animated'>
-							<h6>Характеристики</h6>
+							<h5>Характеристики</h5>
 							<ul class="list-unstyled">
 								<li><i class="fa fa-cogs" aria-hidden="true"></i>  Пружинный Блок:  Bonell</li>
 								<li><i class="fa fa-align-justify" aria-hidden="true"></i>  Слои: термовойлок с 2-х сторон</li>
@@ -706,7 +735,7 @@
 											<div class="col-sm-5">
 												
 												<hr class="visible-xs">
-												<h6>Характеристики</h6>
+												<h5>Характеристики</h5>
 												<ul class="list-unstyled">
 													<li><i class="fa fa-cogs" aria-hidden="true"></i>  Пружинный Блок:  Bonell</li>
 													<li><i class="fa fa-align-justify" aria-hidden="true"></i>  Слои: термовойлок с 2-х сторон</li>
@@ -718,7 +747,7 @@
 
 												<hr>
 
-												<h6 class="attention">Внимание</h6>
+												<h5 class="attention">Внимание</h5>
 												<small>
 													Этот матрас можеть быть произведен не стандартного размера, при необходимости отметтьте соотвествующий пунки 
 													в форме заказа.
@@ -729,7 +758,7 @@
 											</div>
 											<div class="col-sm-7">
 												<hr class="visible-xs">
-												<h6>Форма заказа</h6>
+												<h5>Форма заказа</h5>
 												<form class="form-horizontal">
 													<!-- Text input-->
 													<div class="form-group">
@@ -797,7 +826,7 @@
 											<div class="col-sm-12">
 												<hr>
 				
-												<h6>Описание</h6>
+												<h5>Описание</h5>
 												<p class="modal-description">Бюджетный вариант из данной серии матрасов. Основой матраса является пружинный блок Bonnel – бесшумный, прочный, обеспечивающий оптимальную поддержку позвоночника. Пружинный блок защищен с обеих сторон современным материалом – термовойлоком (нетканый материал, прочный, упругий, плотный, устойчив к влаге, чрезвычайно легкий ). Покрытие матраса выполнено из высококачественного синтетического материала , простеганного на ППУ 1см, которое придает мягкость и комфорт матрасу.
 												</p>
 											</div>
