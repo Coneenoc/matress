@@ -125,13 +125,13 @@
 
          <div class="row">
          	<div class="col-sm-6">
-		    	<h4 class="text-capitalize">
+		    	<h4 class="top-announcer text-capitalize">
 		    	Производство ортопедичесих <br>
 		    	и анатомических матрасов в Алматы
 		    	</h4>
 		    </div>
          	<div class="col-sm-6">
-         	   <div class="phones text-right pull-right">
+         	   <div class="phones pull-right">
          	   	 <a href="tel:+77471308289">+7 747 130 82 89</a><br>
          	     <a href="tel:+77471308289">+7 747 130 82 89</a><br>
          	     <button class="btn btn-info"> перезвоните мне </button>
@@ -207,45 +207,83 @@
 
 			</div>
 		</div>
-
-       <!--
-
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="advantages">
-					<i class="fa fa-usd" aria-hidden="true"></i>
-					<div class="description">
-						<h5>Отличные цены</h5>
-						Цены всегда актульны и ниже рыночных 70%
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="advantages">
-					<i class="fa fa-bug" aria-hidden="true"></i>
-					<div class="description">
-						Антибактерилаьная обработка
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="advantages">
-					<i class="fa fa-leaf" aria-hidden="true"></i>
-					<div class="description">
-						Антиаллергенное покрытие
-					</div>
-				</div>
-			</div>
-		</div>
-
-		-->
 	</div>
 </div>
+<div class="container-fluid comparison">
+    <div class="container">
+		    <h3 class="an head text-center" data-effect='fadeInUp animated' data-time='10'>
+				 <span> Cравнение <span class="highlight"> блоков </span></span>
+				<h5 class="detailed">Плюсы и минусы </h5>
+				</h3>
+    	<div class="row">
+    		<div class="col-sm-3 ">
+    		    <div class="list-of-pro-and-cons">
+    		    	 <h4>Блок Bonell</h4>
+    		    	  <ul class="list-unstyled">
+    		    	  	<li><i class="glyphicon glyphicon-plus"></i> Низкая стоимость</li>
+    		    	  	<li><i class="glyphicon glyphicon-plus"></i> Высота от 12 см </li>
+    		    	  	<li><i class="glyphicon glyphicon-plus"></i> Срок производства 1 день </li>
+    		    	  	<li><i class="glyphicon glyphicon-minus"></i> Возможен шум пружин</li>
+    		    	  	<li><i class="glyphicon glyphicon-minus"></i> Не равномерная нагрузка</li>
+    		    	  	<li><i class="glyphicon glyphicon-minus"></i> Срок службы до 4 лет</li>
+    		    	  	<li><i class="glyphicon glyphicon-minus"></i> Низкий ортопедичесикй эффект</li>
+
+    		    	  </ul>
+    		    </div>
+    		</div>
+    		<div class="col-sm-3 ">
+    		    <div class="list-of-pro-and-cons">
+    		    	 <h4>Блок PockerSpring</h4>
+    		    	  <ul class="list-unstyled">
+    		    	  	<li><i class="glyphicon glyphicon-plus"></i> 256 пружин на м<sup>2</sup></li>
+    		    	  	<li><i class="glyphicon glyphicon-plus"></i> Бесшумный матрас</li>
+    		    	  	<li><i class="glyphicon glyphicon-plus"></i> Нагрзука от 80 до 130кг</li>
+    		    	  	<li><i class="glyphicon glyphicon-plus"></i> Срок службы 6-8 лет</li>
+    		    	  	<li><i class="glyphicon glyphicon-plus"></i> Средний ортопедический эффект </li>
+    		    	  	<li><i class="glyphicon glyphicon-plus"></i> Хорошо вентилируется</li>
+    		    	  	<li><i class="glyphicon glyphicon-minus"></i> Стоимость выше средней</li>
+    		    	  </ul>
+    		    </div>
+    		</div>
+    		<div class="col-sm-3 ">
+    		    <div class="list-of-pro-and-cons">
+    		    	 <h4>Блок MultiPocket</h4>
+    		    	    <ul class="list-unstyled">
+    		    	  	<li><i class="glyphicon glyphicon-plus"></i> 512 пружин на м<sup>2</sup></li>
+    		    	  	<li><i class="glyphicon glyphicon-plus"></i> Бесшумный матрас</li>
+    		    	  	<li><i class="glyphicon glyphicon-plus"></i> Нагрзука от 100 до 140кг</li>
+    		    	  	<li><i class="glyphicon glyphicon-plus"></i> Срок службы 8-9 лет</li>
+    		    	  	<li><i class="glyphicon glyphicon-plus"></i> Высокий ортопедический эффект </li>
+    		    	  	<li><i class="glyphicon glyphicon-plus"></i> Хорошо вентилируется</li>
+    		    	  	<li><i class="glyphicon glyphicon-minus"></i> Самая высокая стоимость</li>
+    		    	  </ul>
+    		    </div>
+    		</div>
+
+    		<div class="col-sm-3 ">
+    		    <div class="list-of-pro-and-cons">
+    		    	 <h4>Блок Foam</h4>
+    		    	  <ul class="list-unstyled">
+    		    	  	<li><i class="glyphicon glyphicon-plus"></i> Низкая стоимость</li>
+    		    	  	<li><i class="glyphicon glyphicon-plus"></i> Равномерно распределяет нагрузку</li>
+    		    	  	<li><i class="glyphicon glyphicon-plus"></i> Срок производства 1 день</li>
+    		    	  	<li><i class="glyphicon glyphicon-plus"></i> Абсолютно бесшумный</li>
+    		    	  	<li><i class="glyphicon glyphicon-plus"></i> Не равномерная нагрузка</li>
+    		    	  	<li><i class="glyphicon glyphicon-minus"></i> Оносительно слабо вентилируется </li>
+    		    	  	<li><i class="glyphicon glyphicon-minus"></i> Тяжелый при больших размерах</li>
+
+    		    	  </ul>
+    		    </div>
+    		</div>
+    	</div>
+    </div>
+</div>
+
 <div class="container-fluid">
 	<div class="container">
 		<h3 class="an head text-center" data-effect='fadeInUp animated' data-time='10'>
 		<span>Пружинный блок <span class="highlight"> Bonell</span></span>
-		<h5>160 пружин на 1 м2</h5>
+		<h5 class="detailed">160 пружин на 1 м2</h5>
 		</h3>
 		<div class="row">
 			<div class="col-sm-4">

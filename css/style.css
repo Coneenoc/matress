@@ -8,7 +8,7 @@ font-family: 'El Messiri', sans-serif;
 
 body {
 	font-size:13px;
-	color:#444;
+	color:#333;
 	overflow-x:hidden; 
 	font-family: 'El Messiri', sans-serif;
 }
@@ -39,7 +39,8 @@ body {
 
 .top-div {
 	background:url('../img/bg_new.jpg') center center no-repeat rgba(0, 0, 0, 0.5) fixed;
-	padding: 100px 0;
+	padding: 20px 0 100px 0;
+  margin-top: 50px;
 	color:#fff;
 
 }
@@ -187,9 +188,6 @@ body {
 	font-family:'Lobster', cursive, Arial;
 }
 
-.container>h3+h5 {
-font-family: 'El Messiri', sans-serif;
-}
 
 span.highlight {
 	color:#ff6e6e;
@@ -200,8 +198,45 @@ span.highlight {
 	padding-bottom: 5px;
 }
 
-.container>h3+h5 {
+.container>h3+h5.detailed  {
 	text-align: center;
+  font-family: 'El Messiri', sans-serif;
+}
+
+
+.comparison {
+    background: url('../img/plain.jpg') center center #f4f4f4;
+
+}
+
+.comparison>.container {
+  padding-bottom: 30px;
+}
+
+.list-of-pro-and-cons {
+  background: #fff;
+  padding:10px;
+  border:1px solid #eee;
+  border-bottom:2px solid #6ab3e8;
+  margin-bottom: 30px;
+}
+
+.list-of-pro-and-cons i {
+  font-size: 11px;
+  color:#666;
+  padding-right: 5px;
+}
+
+
+.list-of-pro-and-cons ul li {
+  padding: 3px 0;
+}
+
+.list-of-pro-and-cons h4 {
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 
@@ -379,7 +414,6 @@ padding-left: 15px;
     font-size: 13px;
     z-index:2;
     font-weight: bold;
-    font-family: Arial;
     background-color: #489FDF;
     border-bottom-width: 0px;
     box-shadow: 0 1px 2px #666;
@@ -438,15 +472,15 @@ padding-left: 15px;
 
     /* Small Devices, Tablets */
     @media only screen and (min-width : 768px) {
+          .phones {
+            text-align: center;
+          }
 
-   
     }
 
     /* Medium Devices, Desktops */
     @media only screen and (min-width : 992px) {
-        .product-section img {
-           padding: 0 ;
-         }
+      
     }
 
     /* Large Devices, Wide Screens */
@@ -475,6 +509,20 @@ padding-left: 15px;
         color:#fff;
        }
 
+
+         .top-announcer {
+            text-align: center;
+          }
+
+          .phones {
+            float: none!Important;
+            text-align: center;
+          }
+
+   
+        .product-section img {
+           padding: 0 ;
+         }
 
     }
 
