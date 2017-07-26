@@ -10,7 +10,7 @@ body {
 	font-size:13px;
 	color:#444;
 	overflow-x:hidden; 
-	font-family: Arial,'El Messiri', sans-serif;
+	font-family: 'El Messiri', sans-serif;
 }
 
 
@@ -23,6 +23,19 @@ body {
   height:40px;
 }
 
+.phones {
+  padding: 10px 0;
+  border-top:1px dashed #fff;
+  border-bottom:3px double #fff;
+}
+
+
+.phones a {
+  font-size: 16px;
+  text-decoration: none;
+  color:#fff;
+}
+
 
 .top-div {
 	background:url('../img/bg_new.jpg') center center no-repeat rgba(0, 0, 0, 0.5) fixed;
@@ -32,7 +45,6 @@ body {
 }
 
 .top-div .attracter {
-	text-align: center;
 	margin-bottom: 20px;
 	font-family: 'Lobster', cursive;
 	color:#fff;
@@ -353,8 +365,8 @@ padding-left: 15px;
 /* menu  custom style */
 
 
-#custom-bootstrap-menu {
-
+#custom-bootstrap-menu .dropdown-menu {
+    font-size: 13px;
 }
 
 

@@ -104,20 +104,45 @@
 				<div class="collapse navbar-collapse navbar-menubuilder">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#products">О нас</a></li>
-						<li><a href="#about-us">Зависимые матрасы </a></li>
-						<li><a href="#about-us">Назависимые матрасы </a></li>
-						<li><a href="#about-us">Беспружинные матрасы </a></li>
-						<li><a href="#about-us">Детские матрасы </a></li>
-						<li><a href="#contact">Отзывы</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Матрасы <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">На зависимомо блоке</a></li>
+								<li><a href="#">На не зависимомо блоке</a></li>
+								<li><a href="#">Беспружинные матрасы</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Детские матрасы</a></li>
+							</ul>
+							</li>
+						<li><a href="#about-us">Наматрасники </a></li>
+						<li><a href="#about-us">Отзывы клиентов </a></li>				
 					</ul>
 				</div>
 			</div>
 		</div>
 
 
+         <div class="row">
+         	<div class="col-sm-6">
+		    	<h4 class="text-capitalize">
+		    	Производство ортопедичесих <br>
+		    	и анатомических матрасов в Алматы
+		    	</h4>
+		    </div>
+         	<div class="col-sm-6">
+         	   <div class="phones text-right pull-right">
+         	   	 <a href="tel:+77471308289">+7 747 130 82 89</a><br>
+         	     <a href="tel:+77471308289">+7 747 130 82 89</a><br>
+         	     <button class="btn btn-info"> перезвоните мне </button>
+         	   </div>
+         	</div>
+         </div>
+
+
 		<div class="row">
-			<div class="col-sm-8 col-sm-push-2">
-				<h1 class="attracter ">Лучшие Мтрасы для Сладких Снов</h1>
+			<div class="col-sm-push-1 col-sm-10">
+				<h1 class="attracter text-center">Лучшие Мтрасы для Сладких Снов</h1>
 				<h4 class="attracter-add text-center">
 				У нас вы можете преобрести отличную продкуцию на 30% ниже рыночной стоимости.
 				Мы работаем на прямую спроизводителем матрасов.
@@ -125,7 +150,7 @@
 			</div>
 		</div>
 
-       <br><hr><br>
+       <hr>
 
 
 		<div class="row">
